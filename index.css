@@ -20,6 +20,9 @@ body{
   height: 2rem;
   border-radius: 2rem;
 }
+.tryButton:hover{
+  background-color: violet;
+}
  .container{
   display: flex;
   flex-direction: row;
@@ -124,13 +127,13 @@ button, input{
    to right, orchid, purple);
  }
 .fig-n{
-  background-color: rgb(192, 192, 192, 0.3);
+  background-color: rgb(192, 192, 192, 0.4);
   height: 2px;
   margin-top: -0.75rem;
 }
 .mob .fig-n{
   height: 0.07rem;
-  margin-top: -0.95rem;
+  margin-top: -0.9rem;
 }
 .fig1{
   width: 35%;
@@ -146,7 +149,7 @@ button, input{
   margin-top: -0.75rem;
 }
 .mob .fig2{
-  margin-top: -0.9rem;
+  margin-top: -0.85rem;
 }
 .fig3{
   width:88%;
@@ -188,6 +191,12 @@ h2, h3{ line-height:2rem;letter-spacing: 1px;
   background-color: orchid;
   margin-top: 0.5rem;
 }
+.btn:hover{
+  background-color: white;
+  border: solid orchid 2px;
+  font-weight: 700;
+  color: purple;
+}
 .content3{
   align-self: center;
 }
@@ -220,6 +229,7 @@ footer{
   background-color: rgb(0, 0, 30) ;
   color: white;
   font-size: 0.8rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .footLogo{
   position: relative;
@@ -248,6 +258,12 @@ footer{
   border:solid white 2px;
   color: white;
   font-size: 1rem;
+  padding-top: 0.25rem;
+}
+
+.grid button:hover{
+  background-color: white;
+  color: #000052;
 }
 footer p{
   float: right;
@@ -263,7 +279,7 @@ footer p{
 @media screen and (max-width:370px){
   .content1{transform:scale(0.1);}  
 }
-@media screen and (max-width:550px){
+@media screen and (max-width:650px){
   .container{flex-direction:column;}
   .container2{flex-direction:column-revese;}
   .image{height:16rem}
@@ -287,10 +303,31 @@ footer p{
   .grid div:last-child{text-align:center;} 
   footer p{float:none;text-align:center;margin:4.5rem 0 0 0;}
 }
-@media screen and (min-width:700px) and (max-width:948px) {
-    .content1{transform:scale(0.9);}
-    .content1{margin-left: -6rem ;}
-    .tryButton{margin-right: 5%;}
-  .grid{grid-template-columns: 280px 100px 70px 170px;}
+@media screen and (min-width:651px) and (max-width:948px) {
+  .tryButton{margin-right: 5%;}
   .footLogo{left:1rem;}
+}
+@media screen and (min-width:800px) and (max-width:948px) {
+    .content1{transform:scale(0.8);}
+    .content1{margin-left: -6rem ;}
+  .grid{grid-template-columns: 280px 100px 70px 170px;}
+}
+@media screen and (min-width:714px) and (max-width:799px) {
+  .content1{transform:scale(0.7);}
+  .content1{margin-left: -6rem ;}
+  .content3{transform: scale(0.9);margin-left: -1rem;}
+  .content3 p{width: 17rem;}
+.grid{grid-template-columns: 200px 70px 70px 170px;}
+}
+@media screen and (min-width:651px) and (max-width:713px) {
+  .content1{transform:scale(0.6);}
+  .content1{margin-left: -3.5rem ;}
+  .content3{transform: scale(0.9);margin-left: -1rem;}
+  .content3 p{width: 16rem;}
+.grid{grid-template-columns: 200px 70px 70px 170px;}
+}
+@media screen and (min-width:1200px) {
+  .content1,.content2{transform:scale(1.2);}
+  .content2{margin-left: 5rem;}
+  .content1{margin: -1rem 0 0 2rem;}
 }
